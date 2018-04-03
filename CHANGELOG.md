@@ -5,3 +5,4 @@
 * Require Python >= 3
 * Added dev requirements
 * Added contribution guidelines
+* Added more tests
