@@ -16,6 +16,7 @@ setup(name='gron',
       author='Bastian Venthur',
       author_email='mail@venthur.de',
       url='https://github.com/venthur/python-gron',
+      python_requires='>=3',
       packages=['gron'],
       entry_points={
           'console_scripts': [
