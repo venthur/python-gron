@@ -1,0 +1,5 @@
+json = {};
+json.one = 1;
+json.two = 2.2;
+json["four b"] = "4";
+json["three-b"] = "3";

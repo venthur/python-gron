@@ -28,7 +28,7 @@ def walk(node, name):
 
 
 def convert(name):
-    if '-' in name:
+    if ('-' in name or ' ' in name):
         return '["{}"]'.format(name[1:])
     return name
 

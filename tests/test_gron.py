@@ -44,3 +44,12 @@ def test_three():
         OUT = fh.read().strip()
     out = gron(IN)
     assert out == OUT
+
+
+def test_ugly():
+    with open('./tests/data/ugly.json', 'r') as fh:
+        IN = fh.read().strip()
+    with open('./tests/data/ugly.gron', 'r') as fh:
+        OUT = fh.read().strip()
+    out = gron(IN)
+    assert out == OUT
