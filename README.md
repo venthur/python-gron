@@ -5,7 +5,11 @@
 Make JSON greppable, a Python implementation of
 [gron](https://github.com/tomnomnom/gron).
 
+
 ## Installation
+
+`gron` is available on [PyPi](https://pypi.org/project/gron/), to
+install it use:
 
 ```bash
 $ pip install gron
