@@ -3,10 +3,9 @@ python:
   - '2.7'
   - '3.6'
   - 'pypy'
-  - 'latest'
+  - 'nightly'
 install:
   - pip install -e .
   - pip install pytest
 script:
   - pytest -v
-
