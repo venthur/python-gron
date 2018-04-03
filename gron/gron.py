@@ -13,7 +13,7 @@ def walk(node, name):
         res.append("{name} = {{}};".format(name=name))
         for k, v in sorted(node.items()):
             res.append(walk(v, name + convert('.' + k)))
-        res = '\n'.join(res)
+        res = '\n'.join(sorted(res))
         return res
     elif isinstance(node, (list, tuple)):
         res = []
