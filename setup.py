@@ -3,15 +3,15 @@
 
 from setuptools import setup
 
-import gron
-
 meta = {}
 exec(open('./gron/version.py').read(), meta)
+meta['long_description'] = open('./README.md').read()
 
 setup(name='gron',
       version=meta['__VERSION__'],
       description='Python library to grep JSON.',
-      long_description='This package provides a Python implementation of the original gron written in go',
+      long_description=meta['long_description'],
+      long_description_content_type='text/markdown',
       keywords='gron json cli',
       author='Bastian Venthur',
       author_email='mail@venthur.de',
