@@ -5,4 +5,4 @@ python:
 install:
   - pip install -e .['dev']
 script:
-  - pytest -v --cov
+  - pytest -v --cov=gron
