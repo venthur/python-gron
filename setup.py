@@ -17,6 +17,12 @@ setup(name='gron',
       author_email='mail@venthur.de',
       url='https://github.com/venthur/python-gron',
       python_requires='>=3',
+      extras_require={
+        'dev': [
+            'pytest',
+            'pytest-cov',
+        ]
+      },
       packages=['gron'],
       entry_points={
           'console_scripts': [

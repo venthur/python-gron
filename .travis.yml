@@ -1,11 +1,8 @@
 language: python
 python:
-# - '2.7'
   - '3.6'
-# - 'pypy'
   - 'nightly'
 install:
-  - pip install -e .
-  - pip install pytest
+  - pip install -e .['dev']
 script:
-  - pytest -v
+  - pytest -v --cov
