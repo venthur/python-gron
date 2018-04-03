@@ -1,4 +1,4 @@
-from gron.gron import gron
+from gron import gron
 
 
 def test_github_data():

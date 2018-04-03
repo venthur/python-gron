@@ -1,10 +1,14 @@
-import sys
+import argparse
 
-from gron.gron import gron
+from gron import gron
+
+parser = argparse.ArgumentParser()
+parser.add_argument('file', help='A JSON file')
 
 
 def main():
-    with(open(sys.argv[1], 'r')) as fh:
+    args = parser.parse_args()
+    with open(args.file, 'r') as fh:
         data = fh.read()
         print(gron(data))
 
