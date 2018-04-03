@@ -1,7 +1,6 @@
 from gron.gron import gron
 
 
-
 def test_github_data():
     with open('./tests/data/github.json', 'r') as fh:
         IN = fh.read().strip()

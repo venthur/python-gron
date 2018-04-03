@@ -1,5 +1,5 @@
-import re
 import json
+
 
 def walk(node, name):
     if node is None:
@@ -33,24 +33,7 @@ def convert(name):
     return name
 
 
-def convert_path(path):
-    rx = re.compile("^[a-zA-Z][_0-9a-zA-Z]+$")
-    r = [path[0]]
-    for x in path[1:]:
-        if x.isdigit():
-            r.append('[{}]'.format(x))
-        elif not rx.search(x):
-            r.append('["{}"]'.format(x))
-        else:
-            r.append('.{}'.format(x))
-    return "".join(r)
-
-
 def gron(input_):
-
     python = json.loads(input_)
-
     output = walk(python, 'json')
-
-
     return output
