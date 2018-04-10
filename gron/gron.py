@@ -1,7 +1,8 @@
 import json
+from typing import Any
 
 
-def walk(node, name):
+def walk(node: Any, name: str) -> str:
     if node is None:
         return "{name} = {value};".format(name=name, value='null')
     elif isinstance(node, bool):
@@ -13,27 +14,25 @@ def walk(node, name):
         res.append("{name} = {{}};".format(name=name))
         for k, v in sorted(node.items()):
             res.append(walk(v, name + convert('.' + k)))
-        res = '\n'.join(sorted(res))
-        return res
+        return '\n'.join(sorted(res))
     elif isinstance(node, (list, tuple)):
         res = []
         res.append("{name} = [];".format(name=name))
         for i, e in enumerate(node):
             res.append(walk(e, name + convert(str([i]))))
-        res = '\n'.join(res)
-        return res
+        return '\n'.join(res)
 
     else:
         return "{name} = {value!r};".format(name=name, value=node)
 
 
-def convert(name):
+def convert(name: str) -> str:
     if ('-' in name or ' ' in name):
         return '["{}"]'.format(name[1:])
     return name
 
 
-def gron(input_):
+def gron(input_: str) -> str:
     python = json.loads(input_)
     output = walk(python, 'json')
     return output
