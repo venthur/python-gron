@@ -1,8 +1,9 @@
 # Changelog
 
-[unreleased]
+[1.1.2] - 2018-04-14
 
 * Added type hints
+* Added docstrings
 
 
 [1.1.1] - 2018-04-03
