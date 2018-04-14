@@ -1,5 +1,10 @@
 # Changelog
 
+[unreleased]
+
+* Added type hints
+
+
 [1.1.1] - 2018-04-03
 
 * Require Python >= 3
