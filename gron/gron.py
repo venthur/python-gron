@@ -1,3 +1,7 @@
+"""Gron's core functions.
+
+"""
+
 import json
 from typing import Any
 
@@ -10,14 +14,14 @@ def walk(node: Any, name: str) -> str:
 
     Parameters
     ----------
-    node :
+    node
         A python object (e.g. dict, list, int, etc)
     name : str
         The name (i.e. path) of the parent element
 
     Returns
     -------
-    str:
+    str
         Transformed JSON for this element
 
     """
