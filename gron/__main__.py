@@ -1,7 +1,17 @@
+"""Gron's command line interface (CLI).
+
+
+Attributes
+----------
+parser : argparse.ArgumentParser
+
+"""
+
 import argparse
 import sys
 
 from gron import gron
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -13,6 +23,12 @@ parser.add_argument(
 
 
 def main():
+    """Gron's CLI
+
+    This method reads the arguments for the command line interface and
+    runs `gron`.
+
+    """
     args = parser.parse_args()
     data = args.file.read()
     print(gron(data))
