@@ -52,8 +52,8 @@ def convert(name: str) -> str:
     name : str
         a path name
 
-    Output
-    ------
+    Returns
+    -------
     str
         valid JSON path
 
@@ -74,8 +74,8 @@ def gron(input_: str) -> str:
     input_ : str
         JSON
 
-    Output
-    ------
+    Returns
+    -------
     str
         Transformed output
 
