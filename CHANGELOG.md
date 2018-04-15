@@ -1,5 +1,11 @@
 # Changelog
 
+[unreleased]
+
+* added Makefile
+* updated docstrings
+
+
 [1.1.2] - 2018-04-14
 
 * Added type hints
