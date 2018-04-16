@@ -8,4 +8,4 @@ __VERSION__ : str
 
 """
 
-__VERSION__ = '1.1.2'
+__VERSION__ = '1.1.3'

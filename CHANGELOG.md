@@ -1,9 +1,11 @@
 # Changelog
 
-[unreleased]
+[1.1.3] - 2018-04-16
 
 * added Makefile
+* added read the docs support
 * updated docstrings
+* updated classifiers in setup.py
 
 
 [1.1.2] - 2018-04-14
