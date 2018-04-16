@@ -5,6 +5,9 @@ all: test
 test:
 	pytest -v
 
+docs:
+	$(MAKE) -C docs html
+
 release:
 	python3 setup.py sdist bdist_wheel upload
 
