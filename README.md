@@ -16,6 +16,12 @@ $ pip install gron
 ```
 
 
+## Documentation
+
+The API documentation can be found
+[here](http://gron.readthedocs.io/en/latest/).
+
+
 ## Usage
 
 Given a JSON file with the content:
