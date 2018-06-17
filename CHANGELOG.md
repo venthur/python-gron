@@ -3,6 +3,7 @@
 [unreleased] -
 
 * added flake8 tests
+* added Python 3.4 and 3.5 to test matrix
 
 
 [1.1.3] - 2018-04-16
