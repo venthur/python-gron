@@ -21,6 +21,7 @@ setup(name='gron',
         'dev': [
             'pytest',
             'pytest-cov',
+            'flake8',
         ]
       },
       packages=['gron'],

@@ -5,5 +5,5 @@ interface.
 
 """
 
-from gron.gron import gron
-from gron.version import __VERSION__
+from gron.gron import gron # noqa
+from gron.version import __VERSION__ # noqa

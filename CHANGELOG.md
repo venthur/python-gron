@@ -2,6 +2,7 @@
 
 [unreleased] -
 
+* added flake8 tests
 
 
 [1.1.3] - 2018-04-16

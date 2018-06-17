@@ -5,4 +5,5 @@ python:
 install:
   - pip install -e .['dev']
 script:
-  - pytest -v --cov=gron
+  - make lint
+  - make test

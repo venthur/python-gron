@@ -1,9 +1,20 @@
-.PHONY: test release clean docs
+.PHONY: \
+    test \
+    lint \
+    docs \
+    release \
+    clean
 
-all: test
+all: lint test
 
 test:
-	pytest -v
+	pytest \
+	    --cov=gron \
+	    --cov-branch \
+	    --cov-report=term-missing
+
+lint:
+	flake8 gron
 
 docs:
 	$(MAKE) -C docs html
