@@ -1,5 +1,9 @@
 # Changelog
 
+## [unreleased]
+
+* re-organized tests
+
 ## [1.1.4] - 2018-06-17
 
 * added flake8 tests
