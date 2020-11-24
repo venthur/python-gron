@@ -1,6 +1,6 @@
 # python-gron
 
-Make JSON greppable, a Python implementation of
+Make JSON grep-able, a Python implementation of
 [gron](https://github.com/tomnomnom/gron).
 
 
