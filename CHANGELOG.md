@@ -3,7 +3,7 @@
 ## [unreleased]
 
 * updated build script
-* .gitlab-actions
+* use .github actions, removed travis CI
 * re-organized tests
 
 ## [1.1.4] - 2018-06-17
