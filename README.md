@@ -1,15 +1,13 @@
 # python-gron
 
-[![Build Status](https://travis-ci.org/venthur/python-gron.svg?branch=master)](https://travis-ci.org/venthur/python-gron)
-
 Make JSON greppable, a Python implementation of
 [gron](https://github.com/tomnomnom/gron).
 
 
 ## Installation
 
-`gron` is available on [PyPi](https://pypi.org/project/gron/), to
-install it use:
+`gron` is available on [PyPi](https://pypi.org/project/gron/), to install it
+use:
 
 ```bash
 $ pip install gron
