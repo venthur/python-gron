@@ -2,6 +2,8 @@
 
 ## [unreleased]
 
+* updated build script
+* .gitlab-actions
 * re-organized tests
 
 ## [1.1.4] - 2018-06-17
