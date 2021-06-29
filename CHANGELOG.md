@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased]
+## [1.1.5] - 2021-06-29
 
 * updated build script
 * use .github actions, removed travis CI
