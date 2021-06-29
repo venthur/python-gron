@@ -19,9 +19,9 @@ setup(
     url='https://github.com/venthur/python-gron',
     project_urls={
         'Documentation': 'https://gron.readthedocs.io/',
-        'Source': 'https://github.com/venthur/gron',
+        'Source': 'https://github.com/venthur/python-gron',
         'Changelog':
-            'https://github.com/venthur/gron/blob/master/CHANGELOG.md',
+            'https://github.com/venthur/python-gron/blob/master/CHANGELOG.md',
     },
     python_requires='>=3',
     packages=['gron'],
