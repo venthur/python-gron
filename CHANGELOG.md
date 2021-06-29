@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.6] - 2021-06-29
+
+* fixed github urls
+
 ## [1.1.5] - 2021-06-29
 
 * updated build script
