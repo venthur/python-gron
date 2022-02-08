@@ -1,5 +1,9 @@
 # Changelog
 
+## [unreleased] -
+
+* added python 3.10 to test suite
+
 ## [1.1.6] - 2021-06-29
 
 * fixed github urls
