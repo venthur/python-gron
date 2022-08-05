@@ -15,7 +15,7 @@ endif
 
 all: lint test
 
-$(VENV): requirements-dev.txt setup.py
+$(VENV): requirements-dev.txt pyproject.toml
 	$(PY) -m venv $(VENV)
 	$(BIN)/pip install --upgrade -r requirements-dev.txt
 	$(BIN)/pip install -e .
@@ -32,7 +32,7 @@ lint: $(VENV)
 .PHONY: release
 release: $(VENV)
 	rm -rf dist
-	$(BIN)/python setup.py sdist bdist_wheel
+	$(BIN)/python3 -m build
 	$(BIN)/twine upload dist/*
 
 .PHONY: docs
@@ -41,7 +41,7 @@ docs: $(VENV)
 
 .PHONY: clean
 clean:
-	rm -rf build dist *.egg-info
+	rm -rf dist *.egg-info
 	rm -rf $(VENV)
 	rm -rf $(DOCS_OUT)
 	find . -type f -name *.pyc -delete
