@@ -22,15 +22,11 @@ parser.add_argument(
     help='A JSON file, if not given gron reads from STDIN',
     nargs='?',
     type=argparse.FileType('r'),
-    default=sys.stdin
+    default=sys.stdin,
 )
 
 
-parser.add_argument(
-    "--version",
-    action="version",
-    version=__VERSION__
-)
+parser.add_argument("--version", action="version", version=__VERSION__)
 
 
 def main() -> None:

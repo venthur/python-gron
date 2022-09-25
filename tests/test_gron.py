@@ -9,6 +9,7 @@ def test_github_data() -> None:
     out = gron(IN)
     assert out == OUT
 
+
 # not implemented yet
 # def test_stream():
 #     with open('./tests/data/stream.json', 'r') as fh:
