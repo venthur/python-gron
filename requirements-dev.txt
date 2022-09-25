@@ -1,3 +1,4 @@
+pip>=21.3
 build==0.8.0
 flake8==5.0.4
 pytest-cov==3.0.0
