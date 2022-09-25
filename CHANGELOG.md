@@ -10,6 +10,7 @@
 * updated test dependencies
 * added weekly dependabot check
 * migrated to pyproject.toml
+* simplified file structure of tests
 
 ## [1.1.6] - 2021-06-29
 
