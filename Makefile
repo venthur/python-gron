@@ -13,7 +13,7 @@ ifeq ($(OS), Windows_NT)
 endif
 
 
-all: lint test
+all: lint mypy test
 
 $(VENV): requirements-dev.txt pyproject.toml
 	$(PY) -m venv $(VENV)
@@ -24,6 +24,10 @@ $(VENV): requirements-dev.txt pyproject.toml
 .PHONY: test
 test: $(VENV)
 	$(BIN)/pytest
+
+.PHONY: mypy
+mypy: $(VENV)
+	$(BIN)/mypy
 
 .PHONY: lint
 lint: $(VENV)
@@ -48,3 +52,4 @@ clean:
 	find . -type d -name __pycache__ -delete
 	# coverage
 	rm -rf htmlcov .coverage
+	rm -rf .mypy_cache

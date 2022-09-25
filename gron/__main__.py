@@ -7,6 +7,8 @@ parser : argparse.ArgumentParser
 
 """
 
+# remove when we don't support py38 anymore
+from __future__ import annotations
 import argparse
 import sys
 
@@ -31,7 +33,7 @@ parser.add_argument(
 )
 
 
-def main():
+def main() -> None:
     """Gron's CLI
 
     This method reads the arguments for the command line interface and

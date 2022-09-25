@@ -1,5 +1,5 @@
 import gron
 
 
-def test_version():
+def test_version() -> None:
     assert hasattr(gron, '__VERSION__')

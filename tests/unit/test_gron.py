@@ -1,7 +1,7 @@
 from gron import gron
 
 
-def test_github_data():
+def test_github_data() -> None:
     with open('./tests/data/github.json', 'r') as fh:
         IN = fh.read().strip()
     with open('./tests/data/github.gron', 'r') as fh:
@@ -19,7 +19,7 @@ def test_github_data():
 #     assert out == OUT
 
 
-def test_one():
+def test_one() -> None:
     with open('./tests/data/one.json', 'r') as fh:
         IN = fh.read().strip()
     with open('./tests/data/one.gron', 'r') as fh:
@@ -28,7 +28,7 @@ def test_one():
     assert out == OUT
 
 
-def test_two():
+def test_two() -> None:
     with open('./tests/data/two.json', 'r') as fh:
         IN = fh.read().strip()
     with open('./tests/data/two.gron', 'r') as fh:
@@ -37,7 +37,7 @@ def test_two():
     assert out == OUT
 
 
-def test_three():
+def test_three() -> None:
     with open('./tests/data/three.json', 'r') as fh:
         IN = fh.read().strip()
     with open('./tests/data/three.gron', 'r') as fh:
@@ -46,7 +46,7 @@ def test_three():
     assert out == OUT
 
 
-def test_ugly():
+def test_ugly() -> None:
     with open('./tests/data/ugly.json', 'r') as fh:
         IN = fh.read().strip()
     with open('./tests/data/ugly.gron', 'r') as fh:

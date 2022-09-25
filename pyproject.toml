@@ -40,3 +40,7 @@ addopts = """
     --cov-report=html
     --cov-report=term-missing:skip-covered
 """
+
+[tool.mypy]
+files = "gron,tests"
+strict = true
