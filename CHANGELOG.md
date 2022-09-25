@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased] -
+## [1.2.0] - 2022-09-25
 
 * added python 3.10 to test suite
 * dropped python 3.7 support

@@ -1,11 +1,3 @@
-"""This module provides gron's version.
+"""This module provides gron's version. """
 
-Attributes
-----------
-
-__VERSION__ : str
-    gron's version, it follows the semver standard
-
-"""
-
-__VERSION__ = '1.1.6'
+__VERSION__ = '1.2.0'
