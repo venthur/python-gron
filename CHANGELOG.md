@@ -4,6 +4,7 @@
 
 * added python 3.10 to test suite
 * dropped python 3.7 support
+* added mypy support
 * removed pypy from test suite
 * removed python3.6
 * updated test dependencies
