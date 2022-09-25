@@ -40,5 +40,3 @@ addopts = """
     --cov-report=html
     --cov-report=term-missing:skip-covered
 """
-
-
