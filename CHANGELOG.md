@@ -1,5 +1,9 @@
 # Changelog
 
+## [unreleased]
+
+* added python 3.11 to test suite
+
 ## [1.2.0] - 2022-09-25
 
 * added python 3.10 to test suite
