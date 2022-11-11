@@ -17,7 +17,6 @@ all: lint mypy test
 
 $(VENV): pyproject.toml
 	$(PY) -m venv $(VENV)
-	$(BIN)/pip install --upgrade pip
 	$(BIN)/pip install --upgrade -e .[dev]
 	touch $(VENV)
 
