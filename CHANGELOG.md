@@ -5,6 +5,7 @@
 * added python 3.11 to test suite
 * replaced requirements-dev.txt with appropriate block in pyproject.toml. You
   can install the dev requirements via `pip install -e .[dev]`
+* updated some dev dependencies
 
 ## [1.2.0] - 2022-09-25
 
