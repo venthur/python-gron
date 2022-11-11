@@ -15,10 +15,9 @@ endif
 
 all: lint mypy test
 
-$(VENV): requirements-dev.txt pyproject.toml
+$(VENV): pyproject.toml
 	$(PY) -m venv $(VENV)
-	$(BIN)/pip install --upgrade -r requirements-dev.txt
-	$(BIN)/pip install -e .
+	$(BIN)/pip install --upgrade -e .[dev]
 	touch $(VENV)
 
 .PHONY: test

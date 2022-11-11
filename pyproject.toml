@@ -27,6 +27,18 @@ gron = "gron.__main__:main"
 'Source' = 'https://github.com/venthur/python-gron'
 'Changelog' = 'https://github.com/venthur/python-gron/blob/master/CHANGELOG.md'
 
+[project.optional-dependencies]
+dev = [
+    "build==0.8.0",
+    "flake8==5.0.4",
+    "pytest-cov==3.0.0",
+    "pytest==7.1.2",
+    "sphinx==5.1.1",
+    "twine==4.0.1",
+    "wheel==0.37.1",
+    "mypy==0.971",
+]
+
 [tool.setuptools.dynamic]
 version = {attr = "gron.__VERSION__" }
 
