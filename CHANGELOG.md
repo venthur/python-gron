@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased]
+## [1.3.0] - 2022-11-11
 
 * added python 3.11 to test suite
 * replaced requirements-dev.txt with appropriate block in pyproject.toml. You
