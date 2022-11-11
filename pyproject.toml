@@ -36,7 +36,7 @@ dev = [
     "sphinx==5.1.1",
     "twine==4.0.1",
     "wheel==0.37.1",
-    "mypy==0.971",
+    "mypy==0.990",
 ]
 
 [tool.setuptools.dynamic]
