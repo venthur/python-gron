@@ -1,0 +1,26 @@
+site_name: gron
+site_url: https://gron.readthedocs.io/
+repo_url: https://github.com/venthur/python-gron
+repo_name: venthur/python-gron
+
+nav:
+  - Home: index.md
+  - API: api.md
+  - Changelog: CHANGELOG.md
+
+theme:
+  name: material
+  highlightjs: true
+  # disable google fonts, use system fonts
+  font: false
+
+markdown_extensions:
+  - pymdownx.superfences
+
+plugins:
+  - search:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: numpy

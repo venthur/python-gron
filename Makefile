@@ -3,8 +3,7 @@ PY = python3
 VENV = venv
 BIN=$(VENV)/bin
 
-DOCS_SRC = docs
-DOCS_OUT = $(DOCS_SRC)/_build
+DOCS_OUT = site
 
 
 ifeq ($(OS), Windows_NT)
@@ -47,7 +46,7 @@ release: $(VENV) build
 
 .PHONY: docs
 docs: $(VENV)
-	$(BIN)/sphinx-build $(DOCS_SRC) $(DOCS_OUT)
+	$(BIN)/mkdocs build
 
 .PHONY: clean
 clean:

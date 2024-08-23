@@ -6,6 +6,7 @@
 * bumped minimum python version to 3.10
 * replaced flake8 with ruff, added all fixes to make ruff happy
 * added test-release target
+* switched from sphinx to mkdocs
 
 ## [1.3.0] - 2022-11-11
 
