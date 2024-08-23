@@ -1,1 +1,1 @@
-/home/venthur/git/python-gron/CHANGELOG.md
+../CHANGELOG.md
