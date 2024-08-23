@@ -23,12 +23,54 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+    - uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Run linter, mypy and tests
-      run: |
-        make
+    - run: |
+        make venv
+    - run: |
+        make test
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - run: |
+        make venv
+    - run: |
+        make lint
+
+  mypy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - run: |
+        make venv
+    - run: |
+        make mypy
+
+
+  test-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.x"
+
+    - run: |
+        make venv
+    - run: |
+        make test-release
