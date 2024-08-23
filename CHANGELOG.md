@@ -1,12 +1,12 @@
 # Changelog
 
-## [unreleased]
+## [1.4.0] -- 2024-08-23
 
-* updated dev dependencies
 * bumped minimum python version to 3.10
 * replaced flake8 with ruff, added all fixes to make ruff happy
-* added test-release target
 * switched from sphinx to mkdocs
+* added test-release target
+* updated dev dependencies
 
 ## [1.3.0] - 2022-11-11
 
