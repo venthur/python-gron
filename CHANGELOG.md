@@ -1,5 +1,10 @@
 # Changelog
 
+## [unreleased]
+
+* updated dev dependencies
+* bumped minimum python version to 3.10
+
 ## [1.3.0] - 2022-11-11
 
 * added python 3.11 to test suite
