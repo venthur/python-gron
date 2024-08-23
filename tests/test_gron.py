@@ -1,10 +1,13 @@
+"""Test gron."""
+
 from gron import gron
 
 
 def test_github_data() -> None:
-    with open('./tests/data/github.json', 'r') as fh:
+    """Test github data."""
+    with open('./tests/data/github.json') as fh:
         IN = fh.read().strip()
-    with open('./tests/data/github.gron', 'r') as fh:
+    with open('./tests/data/github.gron') as fh:
         OUT = fh.read().strip()
     out = gron(IN)
     assert out == OUT
@@ -21,36 +24,40 @@ def test_github_data() -> None:
 
 
 def test_one() -> None:
-    with open('./tests/data/one.json', 'r') as fh:
+    """Test one."""
+    with open('./tests/data/one.json') as fh:
         IN = fh.read().strip()
-    with open('./tests/data/one.gron', 'r') as fh:
+    with open('./tests/data/one.gron') as fh:
         OUT = fh.read().strip()
     out = gron(IN)
     assert out == OUT
 
 
 def test_two() -> None:
-    with open('./tests/data/two.json', 'r') as fh:
+    """Test two."""
+    with open('./tests/data/two.json') as fh:
         IN = fh.read().strip()
-    with open('./tests/data/two.gron', 'r') as fh:
+    with open('./tests/data/two.gron') as fh:
         OUT = fh.read().strip()
     out = gron(IN)
     assert out == OUT
 
 
 def test_three() -> None:
-    with open('./tests/data/three.json', 'r') as fh:
+    """Test three."""
+    with open('./tests/data/three.json') as fh:
         IN = fh.read().strip()
-    with open('./tests/data/three.gron', 'r') as fh:
+    with open('./tests/data/three.gron') as fh:
         OUT = fh.read().strip()
     out = gron(IN)
     assert out == OUT
 
 
 def test_ugly() -> None:
-    with open('./tests/data/ugly.json', 'r') as fh:
+    """Test ugly."""
+    with open('./tests/data/ugly.json') as fh:
         IN = fh.read().strip()
-    with open('./tests/data/ugly.gron', 'r') as fh:
+    with open('./tests/data/ugly.gron') as fh:
         OUT = fh.read().strip()
     out = gron(IN)
     assert out == OUT

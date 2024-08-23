@@ -1,9 +1,8 @@
-"""Gron's core functions.
-
-"""
+"""Gron's core functions."""
 
 # remove when we don't support py38 anymore
 from __future__ import annotations
+
 import json
 from typing import Any
 
@@ -41,7 +40,7 @@ def walk(node: Any, name: str) -> str:
         for k, v in sorted(node.items()):
             res.append(walk(v, name + convert('.' + k)))
         return '\n'.join(sorted(res))
-    elif isinstance(node, (list, tuple)):
+    elif isinstance(node, list | tuple):
         res = []
         res.append(f"{name} = [];")
         for i, e in enumerate(node):
@@ -67,7 +66,7 @@ def convert(name: str) -> str:
 
     """
     if '-' in name or ' ' in name:
-        return '["{}"]'.format(name[1:])
+        return f'["{name[1:]}"]'
     return name
 
 

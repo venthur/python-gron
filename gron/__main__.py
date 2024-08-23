@@ -1,6 +1,5 @@
 """Gron's command line interface (CLI).
 
-
 Attributes
 ----------
 parser : argparse.ArgumentParser
@@ -9,12 +8,11 @@ parser : argparse.ArgumentParser
 
 # remove when we don't support py38 anymore
 from __future__ import annotations
+
 import argparse
 import sys
 
-from gron import gron
-from gron import __VERSION__
-
+from gron import __VERSION__, gron
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -30,7 +28,7 @@ parser.add_argument("--version", action="version", version=__VERSION__)
 
 
 def main() -> None:
-    """Gron's CLI
+    """Gron's CLI.
 
     This method reads the arguments for the command line interface and
     runs `gron`.

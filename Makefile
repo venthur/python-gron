@@ -30,7 +30,7 @@ mypy: $(VENV)
 
 .PHONY: lint
 lint: $(VENV)
-	$(BIN)/flake8
+	$(BIN)/ruff check .
 
 .PHONY: release
 release: $(VENV)

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# noqa
 #
 # Configuration file for the Sphinx documentation builder.
 #
@@ -14,9 +14,10 @@
 
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('..'))
 
-import gron
+import gron # noqa
 
 # -- Project information -----------------------------------------------------
 

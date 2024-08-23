@@ -4,6 +4,7 @@
 
 * updated dev dependencies
 * bumped minimum python version to 3.10
+* replaced flake8 with ruff, added all fixes to make ruff happy
 
 ## [1.3.0] - 2022-11-11
 
