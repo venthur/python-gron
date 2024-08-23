@@ -6,5 +6,9 @@ dist/
 .coverage
 htmlcov/
 .mypy_cache
+site/
+
+docs/index.md
+docs/CHANGELOG.md
 
 venv/
