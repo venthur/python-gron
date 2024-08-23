@@ -46,8 +46,6 @@ release: $(VENV) build
 
 .PHONY: docs
 docs: $(VENV)
-	cp CHANGELOG.md docs/
-	cp README.md docs/index.md
 	$(BIN)/mkdocs build
 
 .PHONY: clean
