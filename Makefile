@@ -13,7 +13,7 @@ ifeq ($(OS), Windows_NT)
 endif
 
 
-all: lint mypy test
+all: lint mypy test test-release
 
 $(VENV): pyproject.toml
 	$(PY) -m venv $(VENV)
@@ -32,10 +32,17 @@ mypy: $(VENV)
 lint: $(VENV)
 	$(BIN)/ruff check .
 
-.PHONY: release
-release: $(VENV)
+.PHONY: build
+build: $(VENV)
 	rm -rf dist
 	$(BIN)/python3 -m build
+
+.PHONY: test-release
+test-release: $(VENV) build
+	$(BIN)/twine check dist/*
+
+.PHONY: release
+release: $(VENV) build
 	$(BIN)/twine upload dist/*
 
 .PHONY: docs
